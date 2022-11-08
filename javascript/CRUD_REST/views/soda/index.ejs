@@ -1,0 +1,9 @@
+<%- include("../partials/head.ejs") %>
+
+<h1>List of Sodas</h1>
+
+<ul>
+    <% sodas.forEach((soda, index) => { %> 
+        <a href="/soda/<%= index %>"> <li><%= soda.name %></li></a>
+    <% }) %>
+</ul>
